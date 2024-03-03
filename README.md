@@ -1,6 +1,6 @@
-# GPT Service Frontend
+# Website template
 
-This is the UI of the gpt service. It uses React+Typescript, Vite and Tailwind.
+This is an initial template for a website or a UI. It uses React+Typescript, Vite and Tailwind.
 
 ## Initializing the project
 
@@ -21,17 +21,15 @@ Since the package manager used is NPM, you need to run the following commands:
 Everything is set up to run the app using docker and docker-compose.
 Since there's two separate repos (frontend and backend), the image for the frontend needs to be generated first. To do that, run the following command in the root folder of this project:
 
-```docker build -t gpt-service-frontend .```
+```
+docker build -t frontend .
+```
 
-Then you can just run the docker compose in the backend project to have everything up and running:
+Then you can just start a docker container running:
 
-```docker compose up -d```
-
-## Logging in
-
-The test user has the following credentials:
-Username: username
-Pwd: password
+```
+docker run frontend
+```
 
 ## Testing and other checks
 
